@@ -1,0 +1,56 @@
+
+
+AMAZON.NoIntent all good
+AMAZON.NoIntent I'm good
+AMAZON.NoIntent I'm all good
+
+
+
+DrinkIntent how to make a {slot value|drinkname}
+DrinkIntent how to make an {slot value|drinkname}
+DrinkIntent how do you make a {slot value|drinkname}
+DrinkIntent how do you make an {slot value|drinkname}
+DrinkIntent how do I make a {slot value|drinkname}
+DrinkIntent how do I make an {slot value|drinkname}
+
+IngredientsIntent whats in a {slot value|drinkname}
+IngredientsIntent whats in an {slot value|drinkname}
+IngredientsIntent what is in a {slot value|drinkname}
+IngredientsIntent what is in an {slot value|drinkname}
+IngredientsIntent what goes in a {slot value|drinkname}
+IngredientsIntent what goes in an {slot value|drinkname}
+IngredientsIntent what goes into a {slot value|drinkname}
+IngredientsIntent what goes in an {slot value|drinkname}
+IngredientsIntent what goes into an {slot value|drinkname}
+
+InstructionsIntent how to mix a {slot value|drinkname}
+InstructionsIntent how to mix an {slot value|drinkname}
+InstructionsIntent how do you mix a {slot value|drinkname}
+InstructionsIntent how do you mix an {slot value|drinkname}
+
+
+
+IngredientsIntentResponse ingredients
+IngredientsIntentResponse ingredients please
+
+IngredientsIntentResponse yes ingredients
+IngredientsIntentResponse yup ingredients
+IngredientsIntentResponse sure ingredients
+IngredientsIntentResponse yes please ingredients
+
+
+IngredientsIntentResponse list ingredients
+IngredientsIntentResponse list ingredients again
+IngredientsIntentResponse what were the ingredients
+
+
+
+InstructionsIntentResponse instructions
+InstructionsIntentResponse instructions please
+
+InstructionsIntentResponse yes instructions
+InstructionsIntentResponse yup instructions
+InstructionsIntentResponse sure instructions
+InstructionsIntentResponse yes please instructions
+
+InstructionsIntentResponse what do you do

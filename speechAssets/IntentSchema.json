@@ -1,0 +1,49 @@
+{
+  "intents": [
+    {
+      "intent": "DrinkIntent",
+      "slots": [
+        {
+          "name": "drinkname",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "IngredientsIntent",
+      "slots": [
+        {
+          "name": "drinkname",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "InstructionsIntent",
+      "slots": [
+        {
+          "name": "drinkname",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "IngredientsIntentResponse"
+    },
+    {
+      "intent": "InstructionsIntentResponse"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    }
+  ]
+}
