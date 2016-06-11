@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /**
  * The Bartender.
  *
@@ -7,11 +7,6 @@
  *  User: "..."
  *  Alexa: "<response>"
  */
-
-/**
- * App ID for the skill
- */
-var APP_ID = undefined; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 
 ////////////// INTERACTION TEXT //////////////
@@ -54,7 +49,15 @@ var INSTRUCTIONS_RESPONSE_REPROMPT_TEXT = "Do you want to hear the ingredients o
 /**
  * The AlexaSkill prototype and helper functions
  */
-var AlexaSkill = require('./AlexaSkill');
+var AlexaSkill = require('./AlexaSkill'),
+    config = require('./config'),
+    drinkApiService = require('./drinkApiService');
+
+/**
+ * App ID for the skill
+ */
+var APP_ID = config.production.amazon.appId;
+
 
 /**
  * BartenderSkill is a child of AlexaSkill.
@@ -195,8 +198,9 @@ BartenderSkill.prototype.intentHandlers = {
 ////////////// DATA FUNCTIONS //////////////
 function getDrinkRecipe(input) {
     console.log( "Getting drink recipe from our APIs - input: " + input );
-    var drinkRecipe = {name: input, fullInstructions: 'Get ingredients and mix them.', ingredientsInstructions: 'Get ingredients.',
-        mixInstructions: 'Mix them.'};
+
+    // query API(s)
+    var drinkRecipe = drinkApiService.getBestMatch(input);
 
     return drinkRecipe;
 }
